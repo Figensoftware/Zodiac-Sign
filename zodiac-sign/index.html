@@ -4,11 +4,44 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>zodiac-sign</title>
+    <title> Zodiac Sign</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon" />
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="container">
+        <h1>zodiac sign</h1>
+        <div class="search">
+            <div>
+                <label for="birthday">
+                    Enter your birthday
+                    <span> <i class="fa-solid fa-arrow-right"></i></span>
+                </label>
+                <input type="date" name="birthday" id="birthday">
+            </div>
+
+            <button id="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Calculate age</button>
+            <img src="./images/pisces.png" alt="">
+            <button id="btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Calculate zodiac sign</button>
+        </div>
+        <div class="results" id="results">
+            <p id="photo"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
 
 </body>
 

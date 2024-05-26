@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c0045;
+    background-image: url("https://www.transparenttextures.com/patterns/subtle-grunge.png");
+}
+
+.container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+.container h1 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 4.5rem;
+    text-shadow: 3px 0 #DA0463;
+    text-transform: capitalize;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    background-color: aliceblue;
+    padding: 15px 40px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.search label {
+    color: #aaa;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.search span {
+    padding-left: 10px;
+}
+
+.search input {
+    margin-right: 20px;
+    color: #aaa;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: #DA0463;
+}
+
+
+.search button {
+    background-color: #cf397c;
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+    color: aliceblue;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.search button:hover,
+.search button:active {
+    background-color: #DA0463;
+    transition: all 0.3s;
+}
+
+.results {
+    width: 950px;
+    text-align: center;
+    padding: 30px;
+    border: #DA0463 double 4px;
+    border-radius: 10px;
+    background-image: url("./images/stars.png");
+    background-color: #544e79;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin: 50px 0;
+    display: none;
+}
+
+.results img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    background-size: cover;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: #DA0463 double 4px;
+}
+
+@media(max-width: 1000px) {
+    .container {
+        margin-top: 130px;
+        margin-bottom: 30px;
+        white-space: nowrap;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .results {
+        width: 650px;
+        text-wrap: wrap;
+    }
+
+}
+
+@media(max-width: 680px) {
+    .results {
+        width: 400px;
+    }
+}
